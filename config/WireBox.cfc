@@ -1,4 +1,13 @@
-﻿component extends="coldbox.system.ioc.config.Binder"{
+﻿/**
+* @name: config.WireBox
+* @hint: Configure WireBox for Coldbox Application
+* @author: Chris Schroeder (schroeder@jhu.edu)
+* @copyright: Johns Hopkins University
+* @created: Monday, 08/20/2018 11:47:24 AM
+* @modified: Monday, 08/20/2018 11:47:24 AM
+*/
+
+component extends="coldbox.system.ioc.config.Binder"{
 
 	/**
 	* Configure WireBox, that's it!

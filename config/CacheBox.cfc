@@ -1,8 +1,13 @@
-﻿component{
+﻿/**
+* @name: config.CacheBox
+* @hint: Configure CacheBox for ColdBox Application Operation
+* @author: Chris Schroeder (schroeder@jhu.edu)
+* @copyright: Johns Hopkins University
+* @created: Monday, 08/20/2018 11:47:24 AM
+* @modified: Monday, 08/20/2018 11:47:24 AM
+*/
 
-	/**
-	* Configure CacheBox for ColdBox Application Operation
-	*/
+component{
 	function configure(){
 
 		// The CacheBox configuration structure DSL
@@ -46,5 +51,4 @@
 			}
 		};
 	}
-
 }

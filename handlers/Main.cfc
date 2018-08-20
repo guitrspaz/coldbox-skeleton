@@ -1,4 +1,13 @@
-﻿component extends="coldbox.system.EventHandler"{
+﻿/**
+* @name: handlers.Main
+* @hint: Handler for the Main layout
+* @author: Chris Schroeder (schroeder@jhu.edu)
+* @copyright: Johns Hopkins University
+* @created: Monday, 08/20/2018 11:47:24 AM
+* @modified: Monday, 08/20/2018 11:47:24 AM
+*/
+
+component extends="coldbox.system.EventHandler"{
 
 	// Default Action
 	function index(event,rc,prc){
