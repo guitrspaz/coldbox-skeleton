@@ -1,17 +1,16 @@
 {
-	"name": "CTL ColdBox Template",
+	"name": "ctl-coldbox-template",
 	"version": "1.0.2",
 	"description": "A template for CTL applications",
 	"main": "index.cfm",
-	"directories": {
-	},
+	"directories": {},
 	"dependencies": {
-		"express":"latest",
-		"jquery":"latest",
-		"bootstrap":"latest",
-		"codemirror":"latest",
-		"normalize":"latest",
-		"modernizr":"latest"
+		"bootstrap": "latest",
+		"codemirror": "latest",
+		"express": "latest",
+		"jquery": "^3.3.1",
+		"modernizr": "latest",
+		"normalize": "latest"
 	},
 	"repository": {
 		"type": "git",

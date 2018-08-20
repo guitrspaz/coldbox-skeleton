@@ -1,5 +1,6 @@
 # General Ignores + IDE
-.DS_Store
+*.project
+*.DS_Store
 settings.xml
 WEB-INF
 
