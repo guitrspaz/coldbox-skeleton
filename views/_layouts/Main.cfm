@@ -10,7 +10,7 @@
 	<base href="#event.getHTMLBaseURL()#" />
 	<!---css --->
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-	<link href="includes/css/application-custom.css" rel="stylesheet">
+	<link href="views/_includes/css/application-custom.css" rel="stylesheet">
 	<!---js --->
 	<!---
 	<script type="text/javascript" src="#application.base#node_modules/requirejs/require.js"></script>
@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="node_modules/normalize/lib/normalize.js"></script>
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="includes/js/application-custom.js"></script>
+	<script src="views/_includes/js/application-custom.js"></script>
 </head>
 <body data-spy="scroll">
 	<!---Top NavBar --->
@@ -52,7 +52,7 @@
 							 <li><a href="http://www.ortussolutions.com/products/coldbox"><i class="glyphicon glyphicon-home"></i> Professional Support</a></li>
 							 <li class="divider"></li>
 							 <li class="centered">
-							 	<img width="150" src="includes/images/ColdBoxLogo2015_300.png" alt="logo"/>
+							 	<img width="150" src="views/_includes/images/ColdBoxLogo2015_300.png" alt="logo"/>
 							 </li>
 						</ul>
 					</li>

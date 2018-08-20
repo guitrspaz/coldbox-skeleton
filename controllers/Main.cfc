@@ -16,8 +16,9 @@ component extends="coldbox.system.EventHandler"{
 	}
 
 	// Do something
-	function doSomething(event,rc,prc){
-		relocate( "main.index" );
+	function oops(event,rc,prc){
+		prc['welcomeMessage']="Oops!";
+		event.setView("main/missingView");
 	}
 
 	/************************************** IMPLICIT ACTIONS *********************************************/

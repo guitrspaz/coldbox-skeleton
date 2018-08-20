@@ -2,7 +2,7 @@
 <div class="jumbotron">
 	<div class="row">
 		<div class="col-md-5">
-			<img src="includes/images/ColdBoxLogo2015_300.png" class="pull-left margin10" alt="logo"/>
+			<img src="views/_includes/images/ColdBoxLogo2015_300.png" class="pull-left margin10" alt="logo"/>
 		</div>
 
 		<div class="col-md-7">
@@ -27,7 +27,7 @@
 			<p>You can click on the following event handlers to execute their default action <span class="label label-danger">index()</span></p>
 			<ul class="list-group">
 				<cfloop list="#getSetting("RegisteredHandlers")#" index="handler">
-					<li class="list-group-item"><a href="#event.buildLink( handler )#">#handler#</a></li>
+					<li class="list-group-item"><a href="/index.cfm/#event.buildLink( handler )#">#handler#</a></li>
 				</cfloop>
 			</ul>
 		</section>
@@ -124,15 +124,15 @@
 			    <li class="list-group-item"><code>/config/ColdBox.cfc</code>: Your application configuration file</li>
 				<li class="list-group-item"><code>/config/Routes.cfm</code>: Your URL Mappings</li>
 			    <li class="list-group-item"><code>/config/WireBox.cfc</code>: Your WireBox Binder</li>
-			    <li class="list-group-item"><code>/handlers</code>: Your application event handlers</li>
+			    <li class="list-group-item"><code>/controllers</code>: Your application event handlers</li>
 			    <li class="list-group-item"><code>/interceptors</code>: System interceptors</li>
-				<li class="list-group-item"><code>/includes</code>: Assets, Helpers, i18n, templates and more.</li>
-				<li class="list-group-item"><code>/layouts</code>:Your application skin layouts</li>
 			    <li class="list-group-item"><code>/lib</code>: Where Jar files can be integrated</li>
 				<li class="list-group-item"><code>/models</code>: Your model layer</li>
 				<li class="list-group-item"><code>/modules</code>: Your application modules</li>
 				<li class="list-group-item"><code>/tests</code>: Your BDD testing harness (Just DO IT!!)</li>
 				<li class="list-group-item"><code>/views</code>: Your application views</li>
+				<li class="list-group-item"><code>/views/_layouts</code>:Your application skin layouts</li>
+				<li class="list-group-item"><code>/views/_includes</code>: Assets, Helpers, i18n, templates and more.</li>
 			</ul>
 		</section>
 	</div>

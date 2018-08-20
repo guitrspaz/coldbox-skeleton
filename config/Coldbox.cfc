@@ -33,8 +33,8 @@ component{
 			'missingTemplateHandler':"",
 
 			//Extension Points
-			'applicationHelper':"includes/helpers/ApplicationHelper.cfm",
-			'viewsHelper':"includes/helpers/ViewsHelper.cfm",
+			'applicationHelper':"views/_includes/helpers/ApplicationHelper.cfm",
+			'viewsHelper':"views/_includes/helpers/ViewsHelper.cfm",
 			'modulesExternalLocation':[],
 			'viewsExternalLocation':"",
 			'layoutsExternalLocation':"",
@@ -115,16 +115,15 @@ component{
 		};
 		*/
 
-		/* flash scope configuration
+		/* flash scope configuration */
 			flash={
-				'scope':"session,client,cluster,ColdboxCache,or full path",//session,client,cluster,ColdboxCache,or full path
+				'scope':"session",//session,client,cluster,ColdboxCache,or full path
 				'properties':{}, // constructor properties for the flash scope implementation
 				'inflateToRC':true, // automatically inflate flash data into the RC scope
 				'inflateToPRC':false, // automatically inflate flash data into the PRC scope
 				'autoPurge':true, // automatically purge flash data for you
 				'autoSave':true // automatically save flash scopes at end of a request and on relocations.
 			};
-		*/
 
 		/* Register Layouts
 			layouts=[
@@ -137,15 +136,15 @@ component{
 			];
 		*/
 
-		/* Conventions
+		/* Conventions */
 			conventions={
-				'handlersLocation':"handlers",
+				'handlersLocation':"controllers",
 				'viewsLocation':"views",
-				'layoutsLocation':"layouts",
+				'layoutsLocation':"views/_layouts",
 				'modelsLocation':"models",
 				'eventAction':"index"
 			};
-		*/
+
 	}
 
 	/**
