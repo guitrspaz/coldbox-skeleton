@@ -28,6 +28,7 @@
 *.project export-ignore
 *.DS_Store export-ignore
 *package.json export-ignore
+*package-lock.json export-ignore
 *unit-test-config.json export-ignore
 *README.md export-ignore
 

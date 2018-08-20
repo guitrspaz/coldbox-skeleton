@@ -1,11 +1,11 @@
 {
 	"name": "ctl-coldbox-template",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A template for CTL applications",
 	"main": "index.cfm",
 	"directories": {},
 	"dependencies": {
-		"bootstrap": "latest",
+		"bootstrap": "3.3.7",
 		"codemirror": "latest",
 		"express": "latest",
 		"jquery": "^3.3.1",

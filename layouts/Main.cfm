@@ -9,11 +9,15 @@
 	<!---Base URL --->
 	<base href="#event.getHTMLBaseURL()#" />
 	<!---css --->
-	<!--- <link href="includes/css/bootstrap.min.css" rel="stylesheet"> --->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	<link href="includes/css/application-custom.css" rel="stylesheet">
 	<!---js --->
-    <!--- <script src="includes/js/jquery.js"></script> --->
-	<!--- <script src="includes/js/bootstrap.min.js"></script> --->
+	<!---
+	<script type="text/javascript" src="#application.base#node_modules/requirejs/require.js"></script>
+	--->
+	<script type="text/javascript" src="node_modules/normalize/lib/normalize.js"></script>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="includes/js/application-custom.js"></script>
 </head>
 <body data-spy="scroll">
