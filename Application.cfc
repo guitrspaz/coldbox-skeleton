@@ -18,7 +18,7 @@ component{
 	// The web server mapping to this application. Used for remote purposes or static purposes
 	COLDBOX_APP_MAPPING="";
 	// COLDBOX PROPERTIES
-	COLDBOX_CONFIG_FILE=ExpandPath('config/Coldbox.cfc');
+	COLDBOX_CONFIG_FILE="";
 	// COLDBOX APPLICATION KEY OVERRIDE
 	COLDBOX_APP_KEY="";
 
@@ -54,4 +54,37 @@ component{
 		return application.cbBootstrap.onMissingTemplate( argumentCollection=arguments );
 	}
 
+	public Void function onError( required Any exception ){
+		var errorStruct={
+			'attrs':{
+				'timeStamp':Now(),
+				'exception':arguments.exception,
+				'stackTrace':getStackTrace()
+			},
+			'caller':'application.onError() > '
+		};
+		WriteLog(errorStruct.caller & ' > ' & SerializeJSON(errorStruct.attrs),"error","yes",application.name&".ErrorLog");
+		return application.cbBootstrap.onException( argumentCollection=arguments );
+	}
+
+	/**
+	 * @name: application.getStackTrace
+	 * @hint: I return the route data
+	 * @returns: Struct
+	 * @date: Friday, 06/23/2017 08:23:54 AM
+	 * @author:	Chris Schroeder (schroeder@jhu.edu)
+	 */
+	private struct function getStackTrace(){
+		var errorStruct={
+			'stackTrace':{}
+		};
+		try{
+			Throw("This is thrown to gain access to the strack trace.","StackTrace");
+		} catch( Any e ){
+			if( structKeyExists( e,'tagContext' ) ){
+				errorStruct['tagContext']=e.TagContext;
+			}
+		}
+		return errorStruct;
+	}
 }
