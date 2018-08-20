@@ -1,8 +1,8 @@
 {
     "name":"CTL ColdBox Template",
-    "version":"1.0.77",
+    "version":"1.0.78",
     "author":"CTL Developer Name",
-    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.77.zip",
+    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.78.zip",
     "slug":"ctl-coldbox-template",
     "shortDescription":"A ColdBox template for CTL applications",
     "createPackageDirectory":false,
