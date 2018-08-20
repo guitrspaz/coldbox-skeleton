@@ -43,7 +43,7 @@
 				<ul class="list-group">
 					<cfloop collection="#getSetting("Modules")#" item="thisModule">
 						<li class="list-group-item">
-							<a href="#event.buildLink( getModuleConfig( thisModule ).mapping )#">#thisModule#</a>
+							<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
 						</li>
 					</cfloop>
 				</ul>

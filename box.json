@@ -1,22 +1,22 @@
 {
     "name":"CTL ColdBox Template",
-    "version":"1.0.74",
+    "version":"1.0.75",
     "author":"CTL Developer Name",
-    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.74.zip",
+    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.75.zip",
     "slug":"ctl-coldbox-template",
+    "shortDescription":"A ColdBox template for CTL applications",
     "createPackageDirectory":false,
     "type":"mvc",
-    "keywords":"",
-    "homepage":"",
-    "documentation":"",
+    "keywords":"ctl,coldbox,jhu,jhsph",
+    "homepage":"https://github.com/guitrspaz/ctl-coldbox-template",
+    "documentation":"https://github.com/guitrspaz/ctl-coldbox-template#readme",
     "repository":{
-        "type":"",
-        "url":""
+        "type":"git",
+        "url":"https://github.com/guitrspaz/ctl-coldbox-template"
     },
-    "bugs":"",
-    "shortDescription":"",
+    "bugs":"https://github.com/guitrspaz/ctl-coldbox-template/issues",
     "contributors":[],
-    "ignore":[],
+    "ignore":["README.md"],
     "devDependencies":{
         "testbox":"^2.7.0"
     },
