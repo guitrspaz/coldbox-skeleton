@@ -25,7 +25,7 @@
 
 			//Extension Points
 			'applicationHelper':"includes/helpers/ApplicationHelper.cfm",
-			'viewsHelper':"",
+			'viewsHelper':"includes/helpers/ViewsHelper.cfm",
 			'modulesExternalLocation':[],
 			'viewsExternalLocation':"",
 			'layoutsExternalLocation':"",
@@ -104,44 +104,46 @@
 				'settingName':"overrideValue"
 			}
 		};
-
-		// flash scope configuration
-		flash={
-			'scope':"session,client,cluster,ColdboxCache,or full path",
-			'properties':{}, // constructor properties for the flash scope implementation
-			'inflateToRC':true, // automatically inflate flash data into the RC scope
-			'inflateToPRC':false, // automatically inflate flash data into the PRC scope
-			'autoPurge':true, // automatically purge flash data for you
-			'autoSave':true // automatically save flash scopes at end of a request and on relocations.
-		};
-
-		//Register Layouts
-		layouts=[
-			{
-				'name':"login",
-		 		'file':"Layout.tester.cfm",
-				'views':"vwLogin,test",
-				'folders':"tags,pdf/single"
-			}
-		];
-
-		//Conventions
-		conventions={
-			'handlersLocation':"handlers",
-			'viewsLocation':"views",
-			'layoutsLocation':"layouts",
-			'modelsLocation':"models",
-			'eventAction':"index"
-		};
 		*/
 
+		/* flash scope configuration
+			flash={
+				'scope':"session,client,cluster,ColdboxCache,or full path",//session,client,cluster,ColdboxCache,or full path
+				'properties':{}, // constructor properties for the flash scope implementation
+				'inflateToRC':true, // automatically inflate flash data into the RC scope
+				'inflateToPRC':false, // automatically inflate flash data into the PRC scope
+				'autoPurge':true, // automatically purge flash data for you
+				'autoSave':true // automatically save flash scopes at end of a request and on relocations.
+			};
+		*/
+
+		/* Register Layouts
+			layouts=[
+				{
+					'name':"login",
+			 		'file':"Layout.tester.cfm",
+					'views':"vwLogin,test",
+					'folders':"tags,pdf/single"
+				}
+			];
+		*/
+
+		/* Conventions
+			conventions={
+				'handlersLocation':"handlers",
+				'viewsLocation':"views",
+				'layoutsLocation':"layouts",
+				'modelsLocation':"models",
+				'eventAction':"index"
+			};
+		*/
 	}
 
 	/**
 	* Development environment
 	*/
 	function development(){
-		coldbox['customErrorTemplate'] = "/coldbox/system/includes/BugReport.cfm";
+		coldbox['customErrorTemplate']="/coldbox/system/includes/BugReport.cfm";
 	}
 
 }
