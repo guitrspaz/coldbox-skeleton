@@ -1,8 +1,8 @@
 {
     "name":"CTL ColdBox Template",
-    "version":"1.0.5",
+    "version":"1.0.6",
     "author":"CTL Developer Name",
-    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.5.zip",
+    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.6.zip",
     "slug":"ctl-coldbox-template",
     "createPackageDirectory":false,
     "type":"mvc",
@@ -28,7 +28,7 @@
         "coldbox":"^5.0.0"
     },
     "scripts":{
-        "postVersion":"package set location='https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.5.zip'",
+        "postVersion":"package set location='https://github.com/guitrspaz/ctl-coldbox-template/archive/`package version`.zip'",
         "postPublish":"!git push --follow-tags"
     }
 }
