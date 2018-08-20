@@ -18,7 +18,7 @@ component{
 	// The web server mapping to this application. Used for remote purposes or static purposes
 	COLDBOX_APP_MAPPING="";
 	// COLDBOX PROPERTIES
-	COLDBOX_CONFIG_FILE="";
+	COLDBOX_CONFIG_FILE=ExpandPath('config/Coldbox.cfc');
 	// COLDBOX APPLICATION KEY OVERRIDE
 	COLDBOX_APP_KEY="";
 
