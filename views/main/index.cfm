@@ -119,26 +119,6 @@
 			</table>
 		</section>
 
-		<section id="applicationData">
-			<div class="page-header">
-				<h2>Application Settings</h2>
-			</div>
-			<ul class="list-group-item">
-				<cfloop list="#application#" index="handler">
-					<li><code>#handler#</code>:application[handler]</li>
-				</cfloop>
-			</ul>
-		</section>
-
-		<section id="eventData">
-			<div class="page-header">
-				<h2>Event Object</h2>
-			</div>
-			<div class="container-fluid">
-				<cfdump var="#event#" />
-			</div>
-		</section>
-
 		<section id="customize">
 			<div class="page-header">
 				<h2>Customizing your Application</h2>
