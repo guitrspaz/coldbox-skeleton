@@ -9,7 +9,7 @@
 
 component{
 	function configure(){
-		setFullRewrites( true );
+		setFullRewrites( false );//true removes index.cfm from urls
 		route( ":handler/:action?" ).end();
 	}
 }
