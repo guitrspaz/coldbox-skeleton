@@ -27,7 +27,7 @@
 			<p>You can click on the following event handlers to execute their default action <span class="label label-danger">index()</span></p>
 			<ul class="list-group">
 				<cfloop list="#getSetting("RegisteredHandlers")#" index="handler">
-					<li class="list-group-item"><a href="/index.cfm/#event.buildLink( handler )#">#handler#</a></li>
+					<li class="list-group-item"><a href="#event.buildLink( handler )#">#handler#</a></li>
 				</cfloop>
 			</ul>
 		</section>

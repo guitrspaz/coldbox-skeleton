@@ -1,6 +1,6 @@
 {
 	"name": "ctl-coldbox-template",
-	"version": "1.0.710",
+	"version": "1.0.711",
 	"description": "A template for CTL applications",
 	"main": "index.cfm",
 	"directories": {},
