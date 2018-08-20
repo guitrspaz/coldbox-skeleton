@@ -1,0 +1,33 @@
+{
+	"name": "CTL ColdBox Template",
+	"version": "1.0.1",
+	"description": "A template for CTL applications",
+	"main": "index.cfm",
+	"directories": {
+	},
+	"dependencies": {
+		"express":"latest",
+		"jquery":"latest",
+		"bootstrap":"latest",
+		"codemirror":"latest",
+		"normalize":"latest",
+		"modernizr":"latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:guitrspaz/ctl-coldbox-template.git"
+	},
+	"keywords": [
+		"ctl",
+		"jhu",
+		"coldbox",
+		"coldfusion",
+		"skeleton"
+	],
+	"author": "Chris Schroeder <schroeder@jhu.edu> (https://github.com/guitrspaz)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/guitrspaz/ctl-coldbox-template/issues"
+	},
+	"homepage": "https://github.com/guitrspaz/ctl-coldbox-template#readme"
+}
