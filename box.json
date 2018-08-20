@@ -1,9 +1,9 @@
 {
-    "name":"Advanced Script APP Template",
-    "version":"1.15.0",
-    "author":"You",
-    "location":"https://github.com/coldbox-templates/advanced-script/archive/v1.15.0.zip",
-    "slug":"cbtemplate-advanced-script",
+    "name":"CTL ColdBox Template",
+    "version":"1.0.0",
+    "author":"CTL Developer Name",
+    "location":"https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.0.zip",
+    "slug":"ctl-coldbox-template",
     "createPackageDirectory":false,
     "type":"mvc",
     "keywords":"",
@@ -28,7 +28,7 @@
         "coldbox":"^5.0.0"
     },
     "scripts":{
-        "postVersion":"package set location='https://github.com/coldbox-templates/advanced-script/archive/v`package version`.zip'",
+        "postVersion":"package set location='https://github.com/guitrspaz/ctl-coldbox-template/archive/1.0.0.zip'",
         "postPublish":"!git push --follow-tags"
     }
 }
